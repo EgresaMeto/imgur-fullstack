@@ -54,6 +54,7 @@ Where <Client_ID> is the one you got from registering your app with Imgur above
 npm install
 npm start
 
+
 ## Setting up app
 cd app
 npm install
