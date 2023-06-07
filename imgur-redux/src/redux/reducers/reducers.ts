@@ -6,7 +6,7 @@ import {
   FetchDataAction,
 } from "../action/actions";
 
-// Define the reducer function
+
 export const fetchDataReducer = (
   state = initialState,
   action: FetchDataAction
