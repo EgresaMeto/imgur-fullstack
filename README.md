@@ -10,7 +10,7 @@ Click on an image to view its details.
 Pagination for browsing multiple pages of the gallery.
 
 ## API: official
-https://api.imgur.com/3/gallery/${section || 'hot'}/${sort || 'viral'}/${window || 'day'}/${page || 1}?showViral=${!!showViral}&mature=false&album_previews=false
+https://api.imgur.com/3/gallery/{{section}}/{{sort}}/{{window}}/{{page}}?showViral={{showViral}}
 
 ## This project structure
 app : bootstraped with create-react-app
@@ -22,18 +22,29 @@ FYI: While registering you app with Imgur Authorization callback URL: in the for
 
 Once registered keep safe the "Client_ID", we will need it in the next step
 
-## Setting up server
-cd server
-create file nodemon.json and the following line
-{"env":{"client_id": "<Client_ID>"}}
-Where <Client_ID> is the one you got from registering your app with Imgur above
-npm install
-npm start
+## Prerequisites
+Node.js (version v18.10.0)
+npm (version 9.6.7)
+Installation
+Clone the repository: git clone https://github.com/EgresaMeto/imgur-fullstack.git
 
-## Setting up app
-cd app
-npm install
-npm start
+Navigate to the client directory: cd imgur-redux
+
+Install the client dependencies: npm install
+
+Navigate to the server directory: cd ../server
+
+Install the server dependencies: npm install
+
+Development
+Start the client-side React app: cd imgur-redux npm start
+The React app will be running on http://localhost:3000.
+
+Start the server-side Node.js app: cd ../server npm start
+The server will be running on http://localhost:9000.
+
+Production Build
+To create a production-ready build of the client-side React app, run the following command from the client directory: npm run build
 
 
 ## Technologies Used
@@ -42,8 +53,6 @@ npm start
 React: A JavaScript library for building user interfaces.
 Redux: A predictable state container for managing application state.
 Styled Components: A CSS-in-JS library for styling components.
-Jest: A JavaScript testing framework.
-react-testing-library: A testing library for React applications.
 TypeScript: A typed superset of JavaScript.
 ## Backend:
 

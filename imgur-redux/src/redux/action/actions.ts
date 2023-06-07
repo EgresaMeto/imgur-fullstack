@@ -47,7 +47,7 @@ export const fetchDataAction = () => {
       const response = await axios.post("http://localhost:9000/gallery", {
         ...filters,
       });
-      console.log(response.data, "----->");
+      
       dispatch({
         type: FETCH_DATA_SUCCESS,
         payload: response.data,
