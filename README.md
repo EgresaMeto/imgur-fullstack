@@ -13,9 +13,12 @@ Pagination for browsing multiple pages of the gallery.
 https://api.imgur.com/3/gallery/{{section}}/{{sort}}/{{window}}/{{page}}?showViral={{showViral}}
 
 ## This project structure
-app : bootstraped with create-react-app
-server: simple server with Express.js
-Getting Started
+
+-app : bootstraped with create-react-app
+
+-server: simple server with Express.js
+
+## Getting Started
 First of all! Register your app with Imgur. To make Imgur API calls, you will need a "Client_ID" for Authorization. You can get Client_ID by registering your app with Imgur HERE.
 
 FYI: While registering you app with Imgur Authorization callback URL: in the form can be # (need not be a valid URL, for development).
@@ -47,29 +50,44 @@ Production Build
 To create a production-ready build of the client-side React app, run the following command from the client directory: npm run build
 
 ## Setting up server
-cd server
-create file nodemon.json and the following line
-{"env":{"client_id": "<Client_ID>"}}
-Where <Client_ID> is the one you got from registering your app with Imgur above
-npm install
-npm start
+-cd server
+
+-create file nodemon.json and the following line
+
+-{"env":{"client_id": "<Client_ID>"}}
+
+-Where <Client_ID> is the one you got from registering your app with Imgur above
+
+-npm install
+
+-npm start
 
 
 ## Setting up app
-cd app
-npm install
-npm start
+
+-cd app
+
+-npm install
+
+-npm start
 
 
 ## Technologies Used
 ## Frontend:
 
-React: A JavaScript library for building user interfaces.
-Redux: A predictable state container for managing application state.
-Styled Components: A CSS-in-JS library for styling components.
-TypeScript: A typed superset of JavaScript.
+
+*React: A JavaScript library for building user interfaces.
+
+*Redux: A predictable state container for managing application state.
+
+*Styled Components: A CSS-in-JS library for styling components.
+
+*TypeScript: A typed superset of JavaScript.
 ## Backend:
 
-Express.js: A web application framework for Node.js.
-Axios: A promise-based HTTP client for making API requests.
-TypeScript: A typed superset of JavaScript.
+
+*Express.js: A web application framework for Node.js.
+
+*Axios: A promise-based HTTP client for making API requests.
+
+*TypeScript: A typed superset of JavaScript.
