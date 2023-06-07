@@ -46,6 +46,19 @@ The server will be running on http://localhost:9000.
 Production Build
 To create a production-ready build of the client-side React app, run the following command from the client directory: npm run build
 
+## Setting up server
+cd server
+create file nodemon.json and the following line
+{"env":{"client_id": "<Client_ID>"}}
+Where <Client_ID> is the one you got from registering your app with Imgur above
+npm install
+npm start
+
+## Setting up app
+cd app
+npm install
+npm start
+
 
 ## Technologies Used
 ## Frontend:
